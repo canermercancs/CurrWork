@@ -122,7 +122,7 @@ delta_mu    = mean(aux_clamped,4) - mean(aux_free,4) - (gauss_prior^-2) .* W_mu;
 W_gamma     = W_gamma + eta .* delta_gamma;
 W_alpha     = W_alpha + eta .* delta_alpha;
 W_mu        = W_mu    + eta .* delta_mu;    
-params      = zip_params(W_alpha, W_gamma, W_mu);
+params      = zip_params(W_alpha, W_gamma, W_mu); 
 
 end
 
